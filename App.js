@@ -7,14 +7,14 @@
  */
 
 import React from 'react';
-import { StatusBar, SafeAreaView } from "react-native";
-import Container from "./src/Components/Container";
+import { StatusBar } from "react-native";
+import Home from "./src/Components/Home";
 
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <Container />
+      <StatusBar barStyle="light-content" backgroundColor="#363431"/>
+      <Home />
     </>
   );
 };
