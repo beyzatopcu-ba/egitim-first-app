@@ -28,7 +28,9 @@ const styles = StyleSheet.create({
         fontSize: width * 0.08,
         fontWeight: Platform.OS == "ios" ? "900" : "bold",
         color: "#FFB53C",
-        marginVertical: width * 0.025
+        marginVertical: width * 0.025,
+        fontFamily: "Marker Felt",
+        fontWeight: "normal"
     },
     okayButtonContainer: {
     },
@@ -41,6 +43,8 @@ const styles = StyleSheet.create({
     okayButtonText: {
         fontSize: width * 0.085,
         fontWeight: Platform.OS == "ios" ? "900" : "bold",
+        fontFamily: "Marker Felt",
+        fontWeight: "normal"
     }
 })
 

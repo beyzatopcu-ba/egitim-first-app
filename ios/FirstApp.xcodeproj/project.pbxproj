@@ -19,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* FirstAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FirstAppTests.m */; };
 		56282E187F4648D91FAED4CB /* libPods-FirstApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BBB85E3AF5657F754C7670 /* libPods-FirstApp.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B85AAC06252CC5690004F7C3 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB8C3065F9D4A098FB9EA42 /* Marker Felt.ttf */; };
 		FEFE4B26C01EBD5F92472B50 /* libPods-FirstApp-FirstAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E780E0222A860FBCE88C79 /* libPods-FirstApp-FirstAppTests.a */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +53,18 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FirstApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FirstApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FirstApp/main.m; sourceTree = "<group>"; };
+		15E58D3BB2EC4DB28BFE84BB /* marker_felt.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = marker_felt.otf; path = ../src/Assets/Fonts/marker_felt.otf; sourceTree = "<group>"; };
 		185D0B3A2D8191350D9E961C /* Pods-FirstApp-FirstAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-FirstAppTests.release.xcconfig"; path = "Target Support Files/Pods-FirstApp-FirstAppTests/Pods-FirstApp-FirstAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		211E2546EE36407599845621 /* markerfelt_regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = markerfelt_regular.ttf; path = ../src/Assets/Fonts/markerfelt_regular.ttf; sourceTree = "<group>"; };
 		24AC48BA5D703BFACE36AFE0 /* Pods-FirstApp-FirstAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-FirstAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp-FirstAppTests/Pods-FirstApp-FirstAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		29A977AFCA32BDE270614ECF /* Pods-FirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.debug.xcconfig"; sourceTree = "<group>"; };
+		29FC4C93515C44FDAF3F0042 /* MarkerFelt.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MarkerFelt.ttf; path = ../src/Assets/Fonts/MarkerFelt.ttf; sourceTree = "<group>"; };
+		2B037934EB8944A286C7D76B /* Marker-Felt.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Marker-Felt.ttf"; path = "../src/Assets/Fonts/Marker-Felt.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* FirstApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirstApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* FirstApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FirstApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE80C302048B42A80571BF2 /* libPods-FirstApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D120F4C539F49E1AE645E64 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Righteous-Regular.ttf"; path = "../src/Assets/Fonts/Righteous-Regular.ttf"; sourceTree = "<group>"; };
+		7AB8C3065F9D4A098FB9EA42 /* Marker Felt.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Marker Felt.ttf"; path = "../src/Assets/Fonts/Marker Felt.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FirstApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95BBB85E3AF5657F754C7670 /* libPods-FirstApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E780E0222A860FBCE88C79 /* libPods-FirstApp-FirstAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstApp-FirstAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +72,7 @@
 		BB65032632F93872584307E4 /* Pods-FirstApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp-tvOS/Pods-FirstApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C07BB623DD891C6E83975B4D /* Pods-FirstApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp-tvOSTests/Pods-FirstApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3BA5181C9F52E67020B3C99 /* Pods-FirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.release.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.release.xcconfig"; sourceTree = "<group>"; };
+		D45F60FB3B35452BA7B02690 /* marker_felt.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = marker_felt.ttf; path = ../src/Assets/Fonts/marker_felt.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -161,7 +169,6 @@
 				C07BB623DD891C6E83975B4D /* Pods-FirstApp-tvOSTests.debug.xcconfig */,
 				0F7099934FDF0FFD7BB6FAC7 /* Pods-FirstApp-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -181,6 +188,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				54FACEB33495939A4A6B1B12 /* Pods */,
+				AE7478BF1C5245659ADCE6EC /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -196,6 +204,20 @@
 				2D02E4901E0B4A5D006451C7 /* FirstApp-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AE7478BF1C5245659ADCE6EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B037934EB8944A286C7D76B /* Marker-Felt.ttf */,
+				7AB8C3065F9D4A098FB9EA42 /* Marker Felt.ttf */,
+				D45F60FB3B35452BA7B02690 /* marker_felt.ttf */,
+				29FC4C93515C44FDAF3F0042 /* MarkerFelt.ttf */,
+				211E2546EE36407599845621 /* markerfelt_regular.ttf */,
+				15E58D3BB2EC4DB28BFE84BB /* marker_felt.otf */,
+				4D120F4C539F49E1AE645E64 /* Righteous-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85AAC06252CC5690004F7C3 /* Marker Felt.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
