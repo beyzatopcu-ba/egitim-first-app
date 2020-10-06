@@ -10,7 +10,22 @@ import Stone from "../Stone"
 
 import styles from "./style"
 
-class Container extends React.Component {
+class Home extends React.Component {
+
+
+
+    renderStones = () => {
+        let colors = [
+            "#FF7860", "#9D80FD", "#97E241",
+            "#2AE2EA", "#ED7EE4", "#FFE622"
+        ]
+
+        let stones = colors.map((color, index) => {
+            return (<Stone key={index} color={color} />);
+        })
+        
+        return stones;
+    }
 
     render() {
         return (
@@ -20,12 +35,7 @@ class Container extends React.Component {
                 </SafeAreaView>
                 <View style={styles.midArea}></View>
                 <View style={styles.stoneBoxContainer}>
-                    <Stone />
-                    <Stone />
-                    <Stone />
-                    <Stone />
-                    <Stone />
-                    <Stone />
+                    {this.renderStones()}
                 </View>
                 <SafeAreaView style={styles.okayButtonContainer}>
                     <TouchableOpacity style={styles.okayButton}>
@@ -38,4 +48,4 @@ class Container extends React.Component {
 
 }
 
-export default Container;
+export default Home;
