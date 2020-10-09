@@ -45,6 +45,14 @@ const styles = StyleSheet.create({
         fontWeight: Platform.OS == "ios" ? "900" : "bold",
         fontFamily: "Marker Felt",
         fontWeight: "normal"
+    },
+    scroll: {
+        flex:1,
+    },
+    scrollContentContainer: {
+    },
+    topGuessBoxContainer: {
+        backgroundColor: "#33312E"
     }
 })
 
