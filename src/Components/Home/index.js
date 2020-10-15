@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 import StonePit from "../StonePit"
-import GuessBox from "../GuessBox"
+import GuessBox from "../GuessBox/GuessBoxClass"
 
 import styles from "./style"
 import {
@@ -23,21 +23,62 @@ import {
 
 class Home extends React.Component {
 
-    state = {
-        stones: [...stones],
-        guessedStones: [null, null, null, null],
-        guesses: []
+    constructor(props) {
+        super(props)
+
+        console.log(">>> Home constructor with props: ", props)
+
+        this.state = {
+            stones: [...stones],
+            guessedStones: [null, null, null, null],
+            guesses: [],
+            hideGuessBox: false
+        }
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log(">>> HOME - SHOULD COMPONENT UPDATE")
+        console.log("nextProps", nextProps)
+        console.log("nextState", nextState)
+        console.log("current props", this.props)
+        console.log("current state", this.state)
+
+        return true;
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log(">>> HOME - GET SNAPSHOT BEFORE UPDATE")
+        console.log("prevProps", prevProps)
+        console.log("prevState", prevState)
+        console.log("current props", this.props)
+        console.log("current state", this.state)
+
+        return {
+            dummy: "value"
+        }
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+
+        console.log(">>> HOME - COMPONENT DID UPDATE")
+        console.log("prevProps", prevProps)
+        console.log("prevState", prevState)
+        console.log("snapshot", snapshot)
+        console.log("current props", this.props)
+        console.log("current state", this.state)
     }
 
     goalStones = []
     scroll = null
 
     componentDidMount() {
+        console.log(">>> Home componentDidMount")
         this.goalStones = startNewGame();
     }
 
     onPress_StonePit = (stone) => {
-        let { stones, guessedStones } = this.state;
+        let stones = [...this.state.stones]
+        let guessedStones = [...this.state.guessedStones]
 
         let firstEmptyPit = getFirstEmptyStonePit(guessedStones);
         if (firstEmptyPit == null) { return; }
@@ -46,12 +87,13 @@ class Home extends React.Component {
         guessedStones[firstEmptyPit] = stone;
         this.setState({
             stones: stones,
-            guessedStones: guessedStones
+            guessedStones: guessedStones,
         })
     }
 
     onPress_GuessedStonePit = (stone, index) => {
-        let { stones, guessedStones } = this.state;
+        let stones = [...this.state.stones]
+        let guessedStones = [...this.state.guessedStones]
 
         stones[stone.id - 1] = stone;
         guessedStones[index] = null;
@@ -75,7 +117,8 @@ class Home extends React.Component {
         this.setState({
             guesses,
             guessedStones: [null, null, null, null],
-            stones: [...stones]
+            stones: [...stones],
+            hideGuessBox: true
         }, () => {
 
             setTimeout(() => {
@@ -140,6 +183,9 @@ class Home extends React.Component {
     }
 
     render() {
+
+        console.log(">>> Home render")
+
         let okayButtonDisabled = hasNullStonePit(this.state.guessedStones)
         return (
             <View style={styles.container}>
@@ -148,11 +194,16 @@ class Home extends React.Component {
                 </SafeAreaView>
                 <View style={styles.midArea}>
                     <View style={styles.topGuessBoxContainer}>
-                        <GuessBox
-                            key={0}
-                            guessedStones={this.state.guessedStones}
-                            clues={null}
-                            onPress_GuessedStonePit={this.onPress_GuessedStonePit} />
+                        {
+                            this.state.hideGuessBox ?
+                                null
+                                :
+                                <GuessBox
+                                    key={0}
+                                    guessedStones={this.state.guessedStones}
+                                    clues={null}
+                                    onPress_GuessedStonePit={this.onPress_GuessedStonePit} />
+                        }
                     </View>
                     <ScrollView style={styles.scroll} ref={this.setScrollRef}>
                         {this.renderGuesses()}
