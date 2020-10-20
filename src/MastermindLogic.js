@@ -4,7 +4,7 @@ let guesses = [];
 export const getGoalStones = () => goalStones;
 export const getGuesses = () => guesses;
 
-export const stones = [
+export const availableStones = [
     {
         id: 1,
         color: "#FF7860"
@@ -47,7 +47,7 @@ const generateRandomStoneCombination = () => {
     for (let i=0; i<4; i++) {
         randomIndex = Math.floor(Math.random() * indices.length);
         stoneIndex = indices[randomIndex];
-        randomStones.push(stones[stoneIndex]);
+        randomStones.push(availableStones[stoneIndex]);
         indices.splice(randomIndex, 1);
     }
 

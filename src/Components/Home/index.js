@@ -32,7 +32,6 @@ class Home extends React.Component {
             stones: [...stones],
             guessedStones: [null, null, null, null],
             guesses: [],
-            hideGuessBox: false
         }
     }
 
@@ -118,7 +117,6 @@ class Home extends React.Component {
             guesses,
             guessedStones: [null, null, null, null],
             stones: [...stones],
-            hideGuessBox: true
         }, () => {
 
             setTimeout(() => {
@@ -194,16 +192,11 @@ class Home extends React.Component {
                 </SafeAreaView>
                 <View style={styles.midArea}>
                     <View style={styles.topGuessBoxContainer}>
-                        {
-                            this.state.hideGuessBox ?
-                                null
-                                :
-                                <GuessBox
-                                    key={0}
-                                    guessedStones={this.state.guessedStones}
-                                    clues={null}
-                                    onPress_GuessedStonePit={this.onPress_GuessedStonePit} />
-                        }
+                        <GuessBox
+                            key={0}
+                            guessedStones={this.state.guessedStones}
+                            clues={null}
+                            onPress_GuessedStonePit={this.onPress_GuessedStonePit} />
                     </View>
                     <ScrollView style={styles.scroll} ref={this.setScrollRef}>
                         {this.renderGuesses()}
