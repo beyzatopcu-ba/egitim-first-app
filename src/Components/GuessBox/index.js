@@ -18,8 +18,9 @@ const GuessBox = (props) => {
     const renderStones = () => {
 
         let guessedStoneComponents = guessedStones.map((guessedStone, index) => {
+            let onPress = props.onPress_GuessedStonePit ? () => props.onPress_GuessedStonePit(guessedStone, index) : null;
             return (
-                <StonePit key={index} stone={guessedStone} onPress={() => props.onPress_GuessedStonePit(guessedStone, index)} />
+                <StonePit key={index} stone={guessedStone} onPress={onPress} />
             )
         })
 
